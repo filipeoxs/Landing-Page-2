@@ -1,0 +1,381 @@
+@import url('https://fonts.cdnfonts.com/css/danny-varefella');
+@import url('https://fonts.cdnfonts.com/css/jo-wrote-a-lovesong');
+@import url('https://fonts.cdnfonts.com/css/consuela-script');
+@import url('http://fonts.cdnfonts.com/css/sandiago');
+/*h1 para titulos
+h2 para subtitulos
+h3 para assinaturas
+p para textos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.10em;
+}
+h1{
+    font-family: 'Danny Varefella', sans-serif;
+    font-size: 40px;
+}
+h2 ,a{
+    font-family: 'Jo_wrote_a_lovesong', sans-serif;
+    font-size: 30px;
+}
+h3{
+    font-family: 'Consuela Script', sans-serif;
+    font-size: 50px;
+}
+p{
+    font-family: 'Sandiago', sans-serif;
+    font-size: 20px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+a:hover{
+    color:#2A5DB2 ;
+}
+ul li{
+    list-style: none;
+}
+i{
+    color: black;
+}
+main{
+    position: absolute;
+    height: 100vh;
+    width:100%
+}
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    position: absolute;
+    background-color: rgb(41, 40, 40);
+}
+.img-wrapper img{
+    opacity: 0.8;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+.text{
+    height: 90%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+footer h3{
+    font-size: 25px;
+    letter-spacing: 0.10em;
+    text-transform: capitalize;
+}
+/*Adventure*/
+
+#barmy{
+    font-size: 170px;
+    color: #fff;
+}
+#graffiti{
+    font-size: 80px;
+    color: #fff;
+}
+.btn{
+    font-family: 'Danny Varefella', sans-serif;
+    font-size: 20px;
+    height: 8%;
+    width: 43%;
+    border-radius: 10px;
+    border: none;
+    
+}
+.btn img{
+    float: left;
+    animation: spray 1s infinite;
+    width: 40px;
+}
+.btn h1{
+    font-size: 26px;
+    margin-top: 4%;
+    color: rgb(65, 64, 64);
+}
+/*Crew*/
+#title-crew{
+    font-size: 100px;
+    color: #6570A7;
+}
+#title-crew, #sub-titleCrew, #text-crew{
+    margin-top: 0%;
+}
+.container-crew{
+    flex-direction: row;
+    display: flex;
+}
+#text-crew{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+.img-crew{
+    margin-left: 5%;
+    height: 100%;
+    width: 50%;
+}
+#img-crew01{
+    height: 90%;
+    width: 40%;
+    z-index: 1;
+    background-color: #000;
+}
+#img-crew02{
+    height: 95%;
+    width: 45%;
+    z-index: 2;
+    margin-top: -25%;
+    margin-left: 30%;
+    background-color: #000;
+}
+
+.img-crew img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.text-galey{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-top: 8%;
+    color: #fff;
+}
+.text-galey p{
+    margin-left: 10%;
+}
+/*Galery*/
+.slideshow-container{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    margin: auto;
+    align-items: center;
+}
+.icons{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.icons button{
+    height: 100%;
+    width: 30%;
+}
+.icons button i{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 900px) {
+    a{
+        font-size: 15px;
+    }
+    .nav{
+        padding-top: 2%;
+    }
+    #barmy{
+        font-size: 80px;
+    }
+    #graffiti{
+        font-size: 40px;
+    }
+    .container{
+        justify-content: space-around;
+    }
+    .text{
+        height: 70%;
+    }
+    /*Adventure*/
+    
+    .btn{
+        height: 8%;
+        font-size: 15px;
+        width: 57%;
+    }
+    .btn h1{
+        font-size: 16px;
+        margin-top: 6%;
+    }
+    .btn img{
+        width: 32px;
+    }
+    footer h3{
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-top: 10%;
+    }
+    /*Crew*/
+    #title-crew, #sub-titleCrew, #text-crew{
+        margin-top: 9%;
+    }
+    #title-crew{
+        font-size: 60px;
+    }
+    #sub-titleCrew{
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 0.10em;
+    }
+    #text-crew{
+        width: 85%;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 4%;
+        text-align: justify;
+    }
+    .img-crew{
+        height: 50%;
+        width: 90%;
+    }
+    #img-crew01{
+        height: 80%;
+        width: 70%;
+        z-index: 1;
+        background-color: #000;
+    }
+    #img-crew02{
+        height: 65%;
+        width: 65%;
+        z-index: 2;
+        margin-top: -34%;
+        margin-left: 34%;
+        background-color: #000;
+    }
+
+    .img-crew img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
+    /*Galery*/
+    .slideshow-container{
+        max-width: 95%;
+    }
+}
+
+
+/*Animations*/
+@keyframes spray {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+
